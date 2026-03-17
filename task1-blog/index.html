@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Saiket Systems Blog</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">Saiket Systems</h2>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <h1>THE BLOG LAYOUT</h1>
+      </section>
+
+
+      <section class="blog-container" id="blogCards">
+        <article class="blog-card">
+          <figure>
+            <img src="https://picsum.photos/400/250?1" />
+          </figure>
+
+          <header>
+            <h2>Future of Web Development</h2>
+            <p class="meta">Published: July 2026 | Author: John</p>
+          </header>
+
+          <section>
+            <p>Modern development uses frameworks and responsive UI.</p>
+          </section>
+
+          <footer>
+            <button class="btn" onclick="openBlog(event,1)">Read More</button>
+          </footer>
+        </article>
+
+        <article class="blog-card">
+          <figure>
+            <img src="https://picsum.photos/400/250?2" />
+          </figure>
+
+          <header>
+            <h2>JavaScript Evolution</h2>
+            <p class="meta">Published: July 2026 | Author: Alex</p>
+          </header>
+
+          <section>
+            <p>JavaScript powers the modern web.</p>
+          </section>
+
+          <footer>
+            <button class="btn" onclick="openBlog(event,2)">Read More</button>
+          </footer>
+        </article>
+
+        <article class="blog-card">
+          <figure>
+            <img src="https://picsum.photos/400/250?3" />
+          </figure>
+
+          <header>
+            <h2>Responsive Design</h2>
+            <p class="meta">Published: July 2026 | Author: Sarah</p>
+          </header>
+
+          <section>
+            <p>Responsive websites work on all devices.</p>
+          </section>
+
+          <footer>
+            <button class="btn" onclick="openBlog(event,3)">Read More</button>
+          </footer>
+        </article>
+
+        <article class="blog-card">
+          <figure>
+            <img src="https://picsum.photos/400/250?4" />
+          </figure>
+
+          <header>
+            <h2>UI / UX Trends</h2>
+            <p class="meta">Published: July 2026 | Author: Kevin</p>
+          </header>
+
+          <section>
+            <p>Modern UI design focuses on simplicity.</p>
+          </section>
+
+          <footer>
+            <button class="btn" onclick="openBlog(event,4)">Read More</button>
+          </footer>
+        </article>
+
+        <article class="blog-card">
+          <figure>
+            <img src="https://picsum.photos/400/250?5" />
+          </figure>
+
+          <header>
+            <h2>Frontend Career Guide</h2>
+            <p class="meta">Published: July 2026 | Author: Emma</p>
+          </header>
+
+          <section>
+            <p>Frontend developers build user interfaces.</p>
+          </section>
+
+          <footer>
+            <button class="btn" onclick="openBlog(event,5)">Read More</button>
+          </footer>
+        </article>
+      </section>
+
+      <section id="blogDetails" style="display: none; padding: 60px">
+        <h1 id="title"></h1>
+        <p id="meta"></p>
+        <img
+          id="image"
+          style="width: 100%; margin: 20px 0; border-radius: 10px"
+        />
+        <p id="content"></p>
+        <button class="btn" onclick="goBack()">Back</button>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>© 2026 Saiket Systems | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
